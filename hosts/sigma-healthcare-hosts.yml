@@ -1,0 +1,81 @@
+generated: '2026-10-22'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 5
+  own: 4
+  other_domain: 1
+  platform: 0
+  roles:
+  - api
+  - other
+  - website
+hosts:
+- host: api.com.au
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: api.com.au
+  role: api
+  relation: other-domain
+- host: investorcentre.sigmahealthcare.com.au
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - InvestorRelations
+  serves: []
+  registrable_domain: sigmahealthcare.com.au
+  role: other
+  relation: own
+- host: portal-test.events.sigmahealthcare.com.au
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: sigmahealthcare.com.au
+  role: other
+  relation: own
+- host: portal.events.sigmahealthcare.com.au
+  found_by:
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  types: []
+  serves:
+  - docs
+  registrable_domain: sigmahealthcare.com.au
+  role: other
+  relation: own
+- host: sigmahealthcare.com.au
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - SignUp
+  - Website
+  - AboutUs
+  - Newsroom
+  - Support
+  - TermsOfService
+  - SupplierTerms
+  - PrivacyPolicy
+  serves:
+  - cdn
+  vendor: cloudflare
+  registrable_domain: sigmahealthcare.com.au
+  role: website
+  relation: own

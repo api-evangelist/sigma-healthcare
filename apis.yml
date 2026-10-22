@@ -1,23 +1,96 @@
 aid: sigma-healthcare
+
 name: Sigma Healthcare
-description: 'Sigma Healthcare is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Sigma Healthcare is an Australian healthcare company that describes itself as a leading network of independent and franchised pharmacies across Australia, with a heritage spanning over 110 years. Its site presents its pharmacy brands (including Chemist Warehouse), a wholesale business with a pharmaceutical distribution network, 3PL/4PL logistics services, supplier programs and community pharmacy accounts, plus an investor centre and the Sigma Connect ordering portal. Added from the API Evangelist harvest backlog (source: australia-apidays-2026); no public developer API is advertised on its website.'
+
 url: https://raw.githubusercontent.com/api-evangelist/sigma-healthcare/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Healthcare
+- Pharmacy
+- Pharmaceutical Distribution
+- Wholesale
+- Logistics
+- Retail
+- Australia
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://sigmahealthcare.com.au/wp-content/themes/sigma/resources/images/logos/sigma-healthcare.png
+
 common:
+- type: Hosts
+  url: hosts/sigma-healthcare-hosts.yml
+- type: IntegrationEdges
+  url: integrations/sigma-healthcare-integration-edges.yml
+- type: Vendors
+  url: vendors/sigma-healthcare-vendors.yml
+- type: SignUp
+  url: https://sigmahealthcare.com.au/register-my-organisation/
+- type: DomainSecurity
+  url: security/sigma-healthcare-domain-security.yml
 - type: Website
   url: https://sigmahealthcare.com.au/
+- type: AboutUs
+  url: https://sigmahealthcare.com.au/about-us/
+- type: Newsroom
+  url: https://sigmahealthcare.com.au/news/
+- type: Support
+  url: https://sigmahealthcare.com.au/contact-us/
+- type: InvestorRelations
+  url: https://investorcentre.sigmahealthcare.com.au/
+- type: TermsOfService
+  url: https://sigmahealthcare.com.au/website-terms-and-conditions
+- type: SupplierTerms
+  url: https://sigmahealthcare.com.au/wholesale/suppliers/terms-and-resources/
+- type: PrivacyPolicy
+  url: https://sigmahealthcare.com.au/privacy-policy
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website confirmed by page title and og:site_name "Sigma Healthcare"; no developer portal, API docs or API pointers found on the site. investorcentre host returns 403 to browser UA but is linked from the homepage nav.
+  evidence:
+  - url: https://sigmahealthcare.com.au/
+    status: 200
+  - url: https://sigmahealthcare.com.au/about-us/
+    status: 200
+  - url: https://sigmahealthcare.com.au/contact-us/
+    status: 200
+  - url: https://sigmahealthcare.com.au/news/
+    status: 200
+  - url: https://sigmahealthcare.com.au/website-terms-and-conditions
+    status: 200
+  - url: https://sigmahealthcare.com.au/wholesale/suppliers/terms-and-resources/
+    status: 200
+  - url: https://sigmahealthcare.com.au/privacy-policy
+    status: 200
+  - url: https://investorcentre.sigmahealthcare.com.au/
+    status: 403
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

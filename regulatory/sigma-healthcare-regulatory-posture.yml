@@ -1,0 +1,61 @@
+generated: '2026-10-22'
+method: searched
+source: https://sigmahealthcare.com.au/privacy-policy/
+signals:
+  data_subject_request:
+    url: https://sigmahealthcare.com.au/privacy-policy/
+    section: Quality, Access and Correction of Our Personal Information
+    channel: Privacy Officer (preferably in writing), per the policy's contact details
+    rights_named: [access, correction]
+    evidence:
+    - source: https://sigmahealthcare.com.au/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        You have the right to request access to the Personal Information that we and/or our contractors hold about you and/or to request a correction of that information. Under some circumstances permitted by law, we may decline your request.
+    - source: https://sigmahealthcare.com.au/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        All requests should be made to our Privacy Officer (preferably in writing) using the contact details below.
+    note: >-
+      Australian Privacy Principles access and correction rights only; no deletion or portability right and
+      no response deadline is stated. The policy also says Sigma may not be able to make its contractors give access or correct data.
+  data_residency:
+    url: https://sigmahealthcare.com.au/privacy-policy/
+    section: Transfer of Your Personal Information Overseas
+    evidence:
+    - source: https://sigmahealthcare.com.au/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        Generally, we will not disclose your Personal Information to overseas recipients, but we may do so in some circumstances including for the purposes permitted in this policy or expressly agreed to by you.
+    note: >-
+      A default of not sending data overseas, with exceptions (reasonable steps for APP compliance, a substantially
+      similar law, or consent). No countries or hosting regions are named.
+  data_retention:
+    url: https://sigmahealthcare.com.au/privacy-policy/
+    section: Protecting Your Information
+    evidence:
+    - source: https://sigmahealthcare.com.au/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        Sigma will take reasonable steps to destroy or permanently de-identify Personal Information if it is no longer needed and we are not legally required to retain it. Some Personal Information, such as Patient health records, must be retained in accordance with law.
+    note: Retention based on need, with legally required retention for patient health records. No retention periods are stated.
+  subprocessors:
+    url: https://sigmahealthcare.com.au/privacy-policy/
+    section: Protecting Your Information
+    evidence:
+    - source: https://sigmahealthcare.com.au/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        Information that is stored electronically may be stored on software which is hosted by third party service providers under contract to us.
+    - source: https://sigmahealthcare.com.au/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        contractors and service providers we engage in order to provide our products and services and/or conduct the functions described above (for example IT consultants and mailing houses);
+    note: >-
+      Says third-party hosting and service providers are used, but only by category. No named subprocessor list is published.

@@ -1,0 +1,11 @@
+name: Sigma Healthcare packages
+generated: '2026-10-22'
+method: none
+note: No first-party SDK, client library or CLI is published. Sigma Healthcare advertises no public developer API. Registry lookups for sigma-healthcare, sigmahealthcare and sigma-connect returned 404 on npm and PyPI. The GitHub account "sigmahealthcare" is a personal User account with no name, blog or bio linking it to the company, so it was not treated as first-party.
+checked:
+- https://registry.npmjs.org/sigma-healthcare
+- https://registry.npmjs.org/sigmahealthcare
+- https://pypi.org/pypi/sigma-healthcare/json
+- https://pypi.org/pypi/sigmahealthcare/json
+- https://api.github.com/users/sigmahealthcare
+packages: []

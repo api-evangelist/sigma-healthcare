@@ -1,0 +1,32 @@
+generated: '2026-10-22'
+method: searched
+source:
+- https://sigmahealthcare.com.au/sigma-and-pharmx-partner-to-strengthen-the-digital-infrastructure/
+- https://zapier.com/apps/sigma-healthcare/integrations
+- https://n8n.io/integrations/sigma-healthcare/
+- https://composio.dev/toolkits/sigma-healthcare
+- https://monid.ai/tools/sigma-healthcare
+checked:
+- https://sigmahealthcare.com.au/
+- https://sigmahealthcare.com.au/sigma-and-pharmx-partner-to-strengthen-the-digital-infrastructure/
+- https://zapier.com/apps/sigma-healthcare/integrations
+- https://n8n.io/integrations/sigma-healthcare
+- https://composio.dev/toolkits/sigma-healthcare
+- https://monid.ai/tools/sigma-healthcare
+- https://n8n.io/integrations/sigma-healthcare/
+summary: null
+marketplace_apps: []
+edges:
+- partner_name: Pharmx
+  partner: null
+  type: claimed
+  evidence: https://sigmahealthcare.com.au/sigma-and-pharmx-partner-to-strengthen-the-digital-infrastructure/
+  marketplace: null
+  direction: unknown
+  category: EDI
+  quote: As part of the agreement, Pharmx becomes the preferred EDI (Electronic Data Interchange) service provider
+    for Sigma wholesale, and Chemist Warehouse retail operations across Australia and New Zealand.
+templates: []
+note: Sigma Healthcare publishes no developer API. Its trading-partner integration runs over EDI. Its own announcement
+  names Pharmx as the preferred EDI provider. Third-party connector vendors (Zenbridge) and SPS Commerce's earlier
+  case study showed up in search, but they are not the provider's own claims, so they were not recorded as edges.
